@@ -974,7 +974,7 @@ INSERT INTO homework_score18 (student_id, student_name, total_score) VALUES
                                                                          ('20251504413', '阮雪莹', 10.0),
                                                                          ('20251504418', '江莹', 10.0),
                                                                          ('20251504421', '黄熙童', 10.0),
-                                                                         ('20251504424', '陈凯琳', 8.0),
+                                                                         ('20251504424', '陈凯琳', 9.9),
                                                                          ('20251504427', '韦炜', 10.0),
                                                                          ('20251504428', '高一茗', 10.0),
                                                                          ('20251504431', '曾颖', 10.0),
@@ -984,12 +984,278 @@ INSERT INTO homework_score18 (student_id, student_name, total_score) VALUES
                                                                          ('20251504444', '杨凯茹', 9.6),
                                                                          ('20251504449', '聂诗轩', 10.0);
 
+-- 继续插入12月8日作业成绩数据
+INSERT INTO homework_score19 (student_id, student_name, total_score) VALUES
+                                                                         ('20241704698', '赵栩柔', 10.0),
+                                                                         ('20251504306', '陈国铭', 0.0),
+                                                                         ('20251504307', '马英杰', 0.0),
+                                                                         ('20251504308', '陈怡霏', 10.0),
+                                                                         ('20251504310', '李婧', 10.0),
+                                                                         ('20251504312', '庄钰', 0.0),
+                                                                         ('20251504313', '杨洋', 10.0),
+                                                                         ('20251504314', '徐铭秀', 9.9),
+                                                                         ('20251504320', '吴林泽', 0.0),
+                                                                         ('20251504321', '蓝思颖', 0.0),
+                                                                         ('20251504323', '李畅', 0.0),
+                                                                         ('20251504329', '范蕊菲', 10.0),
+                                                                         ('20251504331', '程菲', 0.0),
+                                                                         ('20251504333', '李怡萱', 0.0),
+                                                                         ('20251504336', '罗舒笑', 0.0),
+                                                                         ('20251504341', '罗雅晴', 0.0),
+                                                                         ('20251504345', '林钰然', 10.0),
+                                                                         ('20251504346', '梁铠岚', 0.0),
+                                                                         ('20251504353', '金彦晞', 0.0),
+                                                                         ('20251504354', '余泓毅', 0.0),
+                                                                         ('20251504356', '陈钰泉', 0.0),
+                                                                         ('20251504357', '黄乐怡', 0.0),
+                                                                         ('20251504361', '易可芸', 0.0),
+                                                                         ('20251504365', '李春梅', 10.0),
+                                                                         ('20251504366', '蔡晓钰', 0.0),
+                                                                         ('20251504369', '唐思琪', 0.0),
+                                                                         ('20251504376', '巫嘉怡', 0.0),
+                                                                         ('20251504383', '王思颖', 9.8),
+                                                                         ('20251504386', '罗嘉泓', 0.0),
+                                                                         ('20251504387', '杨泽浩', 10.0),
+                                                                         ('20251504392', '林伊婷', 9.8),
+                                                                         ('20251504398', '黄若熙', 0.0),
+                                                                         ('20251504401', '陈心悦', 10.0),
+                                                                         ('20251504405', '黄琪', 0.0),
+                                                                         ('20251504408', '吴雯晶', 9.9),
+                                                                         ('20251504410', '柳妍惠', 0.0),
+                                                                         ('20251504413', '阮雪莹', 0.0),
+                                                                         ('20251504418', '江莹', 10.0),
+                                                                         ('20251504421', '黄熙童', 10.0),
+                                                                         ('20251504424', '陈凯琳', 9.9),
+                                                                         ('20251504427', '韦炜', 10.0),
+                                                                         ('20251504428', '高一茗', 0.0),
+                                                                         ('20251504431', '曾颖', 10.0),
+                                                                         ('20251504434', '包睿', 0.0),
+                                                                         ('20251504438', '冯梓瑄', 10.0),
+                                                                         ('20251504443', '张澜舰', 10.0),
+                                                                         ('20251504444', '杨凯茹', 10.0),
+                                                                         ('20251504449', '聂诗轩', 10.0);
+
+-- 继续插入12月9日作业成绩数据
+INSERT INTO homework_score20 (student_id, student_name, total_score) VALUES
+                                                                         ('20241704698', '赵栩柔', 10.0),
+                                                                         ('20251504306', '陈国铭', 0.0),
+                                                                         ('20251504307', '马英杰', 0.0),
+                                                                         ('20251504308', '陈怡霏', 10.0),
+                                                                         ('20251504310', '李婧', 10.0),
+                                                                         ('20251504312', '庄钰', 0.0),
+                                                                         ('20251504313', '杨洋', 10.0),
+                                                                         ('20251504314', '徐铭秀', 10.0),
+                                                                         ('20251504320', '吴林泽', 0.0),
+                                                                         ('20251504321', '蓝思颖', 0.0),
+                                                                         ('20251504323', '李畅', 0.0),
+                                                                         ('20251504329', '范蕊菲', 10.0),
+                                                                         ('20251504331', '程菲', 1.0),
+                                                                         ('20251504333', '李怡萱', 0.0),
+                                                                         ('20251504336', '罗舒笑', 0.0),
+                                                                         ('20251504341', '罗雅晴', 0.0),
+                                                                         ('20251504345', '林钰然', 10.0),
+                                                                         ('20251504346', '梁铠岚', 0.0),
+                                                                         ('20251504353', '金彦晞', 0.0),
+                                                                         ('20251504354', '余泓毅', 0.0),
+                                                                         ('20251504356', '陈钰泉', 0.0),
+                                                                         ('20251504357', '黄乐怡', 0.0),
+                                                                         ('20251504361', '易可芸', 0.0),
+                                                                         ('20251504365', '李春梅', 10.0),
+                                                                         ('20251504366', '蔡晓钰', 0.0),
+                                                                         ('20251504369', '唐思琪', 0.0),
+                                                                         ('20251504376', '巫嘉怡', 0.0),
+                                                                         ('20251504383', '王思颖', 10.0),
+                                                                         ('20251504386', '罗嘉泓', 0.0),
+                                                                         ('20251504387', '杨泽浩', 10.0),
+                                                                         ('20251504392', '林伊婷', 10.0),
+                                                                         ('20251504398', '黄若熙', 0.0),
+                                                                         ('20251504401', '陈心悦', 10.0),
+                                                                         ('20251504405', '黄琪', 0.0),
+                                                                         ('20251504408', '吴雯晶', 10.0),
+                                                                         ('20251504410', '柳妍惠', 0.0),
+                                                                         ('20251504413', '阮雪莹', 0.0),
+                                                                         ('20251504418', '江莹', 10.0),
+                                                                         ('20251504421', '黄熙童', 9.9),
+                                                                         ('20251504424', '陈凯琳', 10.0),
+                                                                         ('20251504427', '韦炜', 10.0),
+                                                                         ('20251504428', '高一茗', 0.0),
+                                                                         ('20251504431', '曾颖', 10.0),
+                                                                         ('20251504434', '包睿', 0.0),
+                                                                         ('20251504438', '冯梓瑄', 10.0),
+                                                                         ('20251504443', '张澜舰', 0.0),
+                                                                         ('20251504444', '杨凯茹', 10.0),
+                                                                         ('20251504449', '聂诗轩', 10.0);
+
+-- (之前未交或未写完，现在补交)
+-- 同时使用学号和姓名作为条件（最安全）
+-- 使用事务确保两个更新都执行（要么都成功，要么都失败）
+START TRANSACTION;
+UPDATE homework_score7
+SET total_score = 10.0
+WHERE student_id = '20251504392'AND student_name = '林伊婷';
+UPDATE homework_score8
+SET total_score = 10.0
+WHERE student_id = '20251504392'AND student_name = '林伊婷';
+COMMIT;
+
+START TRANSACTION;
+UPDATE homework_score7
+SET total_score = 10.0
+WHERE student_id = '20251504438' AND student_name = '冯梓瑄';
+UPDATE homework_score9
+SET total_score = 10.0
+WHERE student_id = '20251504438' AND student_name = '冯梓瑄';
+UPDATE homework_score18
+SET total_score = 10.0
+WHERE student_id = '20251504438' AND student_name = '冯梓瑄';
+UPDATE homework_score15
+SET total_score = 10.0
+WHERE student_id = '20251504438' AND student_name = '冯梓瑄';
+UPDATE homework_score16
+SET total_score = 9.9
+WHERE student_id = '20251504438' AND student_name = '冯梓瑄';
+COMMIT;
+
+START TRANSACTION;
+-- 第1次作业
+UPDATE homework_score1
+SET total_score = 0.0
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第2次作业
+UPDATE homework_score2
+SET total_score = 9.5
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第3次作业
+UPDATE homework_score3
+SET total_score = 9.6
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第4次作业
+UPDATE homework_score4
+SET total_score = 9.5
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第5次作业
+UPDATE homework_score5
+SET total_score = 9.7
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第6次作业
+UPDATE homework_score6
+SET total_score = 9.6
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第7次作业 (已经有了10分，现在设为9.7分)
+UPDATE homework_score7
+SET total_score = 9.7
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第8次作业
+UPDATE homework_score8
+SET total_score = 9.8
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第9次作业
+UPDATE homework_score9
+SET total_score = 9.7
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第10次作业
+UPDATE homework_score10
+SET total_score = 9.8
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第11次作业
+UPDATE homework_score11
+SET total_score = 9.9
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第12次作业
+UPDATE homework_score12
+SET total_score = 9.8
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+
+-- 第13次作业
+UPDATE homework_score13
+SET total_score = 9.9
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+
+-- 第14次作业 (保持原样)
+-- 第15次作业 (保持原样)
+-- 第16次作业
+UPDATE homework_score16
+SET total_score = 9.9
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第17次作业
+UPDATE homework_score17
+SET total_score = 9.9
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+-- 第18次作业
+UPDATE homework_score18
+SET total_score = 9.9
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+COMMIT;
+
+-- 第1次作业 12月22日提交
+UPDATE homework_score1
+SET total_score = 9.8
+WHERE student_id = '20251504354' AND student_name = '余泓毅';
+COMMIT;
 
 
+START TRANSACTION;
+UPDATE homework_score13
+SET total_score = 10.0
+WHERE student_id = '20251504331'AND student_name = '程菲';
+COMMIT;
 
+START TRANSACTION;
+-- 第1次作业
+UPDATE homework_score1
+SET total_score = 10.0
+WHERE student_id = '20241704698' AND student_name = '赵栩柔';
+-- 第2次作业
+UPDATE homework_score2
+SET total_score = 10.0
+WHERE student_id = '20241704698' AND student_name = '赵栩柔';
+-- 第18次作业
+UPDATE homework_score18
+SET total_score = 10.0
+WHERE student_id = '20241704698' AND student_name = '赵栩柔';
+COMMIT;
 
+DROP PROCEDURE IF EXISTS generate_homework_report;
+DELIMITER //
+CREATE PROCEDURE generate_homework_report()
+BEGIN
+    DECLARE i INT DEFAULT 1;
+    DECLARE pivot_columns LONGTEXT DEFAULT '';
+    DECLARE union_parts LONGTEXT DEFAULT '';
 
+    -- 动态生成PIVOT列和UNION ALL部分
+    WHILE i <= 20 DO
+            -- 构建PIVOT列
+            SET pivot_columns = CONCAT(pivot_columns,
+                                       'MAX(CASE WHEN homework_no = ', i, ' THEN total_score END) AS homework', i,
+                                       IF(i < 20, ', ', ''));
+            -- 构建UNION ALL部分
+            SET union_parts = CONCAT(union_parts,
+                                     'SELECT student_id, student_name, total_score, ', i, ' AS homework_no FROM homework_score', i,
+                                     IF(i < 20, ' UNION ALL ', ''));
+            SET i = i + 1;
+        END WHILE;
 
+    -- 构建完整查询
+    SET @sql_query = CONCAT(
+            'SELECT student_id, student_name, ',
+            pivot_columns, ', ',
+            'AVG(total_score) AS avg_score, ',
+            'SUM(total_score) AS total_all_score ',
+            'FROM (', union_parts, ') all_homework ',
+            'GROUP BY student_id, student_name ',
+            'ORDER BY student_id'
+                     );
+
+    -- 执行动态SQL
+    PREPARE stmt FROM @sql_query;
+    EXECUTE stmt;
+    DEALLOCATE PREPARE stmt;
+END//
+
+DELIMITER ;
+-- 调用存储过程
+CALL generate_homework_report();
 
 
 
