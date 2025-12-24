@@ -79,15 +79,28 @@ UPDATE midterm_scores SET score2 = 58 WHERE student_id LIKE '%312';
 UPDATE midterm_scores SET score2 = 66 WHERE student_id LIKE '%398';
 
 -- 合并score1和score2，按成绩由高到低排序（NULL值排在最后）
+-- 标注考试类型
 SELECT
     student_id,
     name,
-    COALESCE(score1, score2) as score, -- 合并两次考试成绩
+    COALESCE(score1, score2, 0) as score, -- 合并两次考试成绩，未考试按0分处理
     CASE
         WHEN score1 IS NOT NULL THEN '第一次考试'
         WHEN score2 IS NOT NULL THEN '补考'
         ELSE '未考试'
-        END as exam_type
+        END as exam_type,
+    -- 计算赋分得分
+    CASE
+        WHEN COALESCE(score1, score2) IS NULL THEN 0 -- 未考试得0分
+        ELSE GREATEST(
+                ROUND(40 + (COALESCE(score1, score2) - 5) * 60 / (97 - 5)), -- 公式计算
+                COALESCE(score1, score2) -- 取原始分
+             )
+        END as new_score
 FROM midterm_scores
-ORDER BY IF(COALESCE(score1, score2) IS NULL, 1, 0),
-    COALESCE(score1, score2) DESC;
+ORDER BY
+    CASE
+        WHEN COALESCE(score1, score2, 0) = 0 THEN 1 -- 未考试排在最后
+        ELSE 0
+        END,
+    COALESCE(score1, score2, 0) DESC;
