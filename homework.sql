@@ -991,7 +991,7 @@ INSERT INTO homework_score19 (student_id, student_name, total_score) VALUES
                                                                          ('20251504307', '马英杰', 0.0),
                                                                          ('20251504308', '陈怡霏', 10.0),
                                                                          ('20251504310', '李婧', 10.0),
-                                                                         ('20251504312', '庄钰', 0.0),
+                                                                         ('20251504312', '庄钰', 10.0),
                                                                          ('20251504313', '杨洋', 10.0),
                                                                          ('20251504314', '徐铭秀', 9.9),
                                                                          ('20251504320', '吴林泽', 0.0),
@@ -1000,7 +1000,7 @@ INSERT INTO homework_score19 (student_id, student_name, total_score) VALUES
                                                                          ('20251504329', '范蕊菲', 10.0),
                                                                          ('20251504331', '程菲', 0.0),
                                                                          ('20251504333', '李怡萱', 0.0),
-                                                                         ('20251504336', '罗舒笑', 0.0),
+                                                                         ('20251504336', '罗舒笑', 9.6),
                                                                          ('20251504341', '罗雅晴', 0.0),
                                                                          ('20251504345', '林钰然', 10.0),
                                                                          ('20251504346', '梁铠岚', 0.0),
@@ -1051,7 +1051,7 @@ INSERT INTO homework_score20 (student_id, student_name, total_score) VALUES
                                                                          ('20251504329', '范蕊菲', 10.0),
                                                                          ('20251504331', '程菲', 1.0),
                                                                          ('20251504333', '李怡萱', 0.0),
-                                                                         ('20251504336', '罗舒笑', 0.0),
+                                                                         ('20251504336', '罗舒笑', 10.0),
                                                                          ('20251504341', '罗雅晴', 0.0),
                                                                          ('20251504345', '林钰然', 10.0),
                                                                          ('20251504346', '梁铠岚', 0.0),
@@ -1204,6 +1204,16 @@ START TRANSACTION;
 UPDATE homework_score13
 SET total_score = 10.0
 WHERE student_id = '20251504331'AND student_name = '程菲';
+COMMIT;
+
+-- 第19，20次作业抄袭，12.26现补交
+START TRANSACTION;
+UPDATE homework_score19
+SET total_score = 10.0
+WHERE student_id = '20251504361'AND student_name = '易可芸';
+UPDATE homework_score20
+SET total_score = 9.9
+WHERE student_id = '20251504361'AND student_name = '易可芸';
 COMMIT;
 
 START TRANSACTION;
