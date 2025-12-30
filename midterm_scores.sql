@@ -98,9 +98,13 @@ SELECT
              )
         END as new_score
 FROM midterm_scores
+-- 按照Excel表格中的规律排序：先按入学年份，然后按学号数值大小
 ORDER BY
+    -- 先按学号前4位（入学年份）排序
     CASE
-        WHEN COALESCE(score1, score2, 0) = 0 THEN 1 -- 未考试排在最后
-        ELSE 0
+        WHEN student_id LIKE '2024%' THEN 1
+        WHEN student_id LIKE '2025%' THEN 2
+        ELSE 3
         END,
-    COALESCE(score1, score2, 0) DESC;
+    -- 然后按学号字符串的数值大小排序
+    CAST(student_id AS UNSIGNED);

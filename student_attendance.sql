@@ -110,4 +110,13 @@ SELECT
     leave_count AS '请假次数',
     sign_count + leave_count AS '有效出勤数'
 FROM student_attendance
-ORDER BY name;
+-- 按照Excel表格中的规律排序：先按入学年份，然后按学号数值大小
+ORDER BY
+    -- 先按学号前4位（入学年份）排序
+    CASE
+        WHEN student_id LIKE '2024%' THEN 1
+        WHEN student_id LIKE '2025%' THEN 2
+        ELSE 3
+        END,
+    -- 然后按学号字符串的数值大小排序
+    CAST(student_id AS UNSIGNED);

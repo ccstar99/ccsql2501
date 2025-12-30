@@ -84,7 +84,7 @@ SELECT
     ss.avg_score,
     ss.total_score_sum,
     -- 新增字段1：平均分的10倍
-    ROUND(ss.avg_score * 10, 4) as avg_score_x10,
+    ROUND(ss.avg_score * 10) as avg_score_x10,
     -- 新增字段2：未交作业的作业编号列表（只考虑有效作业）
     (
         SELECT GROUP_CONCAT(missing_index ORDER BY missing_index SEPARATOR ', ')
@@ -100,7 +100,16 @@ SELECT
              ) missing
     ) as missing_homeworks
 FROM student_summary ss
-ORDER BY ss.total_score_sum DESC;
+-- 按照Excel表格中的规律排序：先按入学年份，然后按学号数值大小
+ORDER BY
+    -- 先按学号前4位（入学年份）排序
+    CASE
+        WHEN ss.student_id LIKE '2024%' THEN 1
+        WHEN ss.student_id LIKE '2025%' THEN 2
+        ELSE 3
+        END,
+    -- 然后按学号字符串的数值大小排序
+    CAST(ss.student_id AS UNSIGNED);
 
 -- 清理临时表
 DROP TEMPORARY TABLE IF EXISTS temp_scores;
